@@ -4,10 +4,18 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div className='NavContainer'>
-            <div>
-                
-            </div>
             
+              <span>Rata</span>
+            
+                <ul className='NavItem'>
+                    <li>Home</li>
+                    <li>Our Portfolio</li>
+                    <li>Our team</li>
+                    <li>Contact us</li>
+                    
+
+                </ul>
+                <button>login</button>
         </div>
     );
 };
