@@ -3,19 +3,15 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div className='NavContainer'>
-            
-              <span>Rata</span>
-            
-                <ul className='NavItem'>
-                    <li>Home</li>
-                    <li>Our Portfolio</li>
-                    <li>Our team</li>
-                    <li>Contact us</li>
-                    
+        <div className='navContainer'>
+          <div className='navWrapper'>
+            <div className='nlogo'>
 
-                </ul>
-                <button>login</button>
+            </div>
+            <div className='nItem'>
+                
+            </div>
+          </div>
         </div>
     );
 };
