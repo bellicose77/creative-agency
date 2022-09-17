@@ -1,4 +1,19 @@
-.NavContainer{
+.navContainer{
+    background-color: #FBD062;
+}
+.navWrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.nItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.lButton{
+    background-color: #111430;
+    width: 134px;
+    height: 45px;
+    color: #FFFFFF;
 }
