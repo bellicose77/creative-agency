@@ -7,7 +7,8 @@ dotenv.config();
 const port = 8000;
 const connect = async() =>{
     try{
-
+        await mongoose.connect(process.env.MONGO);
+        console.log("connected to the mongodb")
     }catch(err){
         throw err;
     }
@@ -17,5 +18,6 @@ app.get('/', (req, res) => {
   })
   
   app.listen(port, () => {
+    connect()
     console.log(`Example app listening on port ${port}`)
   })
