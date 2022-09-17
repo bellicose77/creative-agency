@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose  from 'mongoose';
 import dotenv from 'dotenv'
+import userRoute from './routes/users.js'
 
 const app = express();
 dotenv.config();
@@ -18,6 +19,8 @@ const connect = async() =>{
 
 // all middel ware will be here
 app.use(express.json())
+
+app.use('/api/users',userRoute);
 
   
   app.listen(port, () => {
