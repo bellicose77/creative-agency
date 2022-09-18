@@ -16,4 +16,11 @@ export const register = async(req,res,next) =>{
         next(err);
 
     }
+};
+export const login = async(req,res,next)=>{
+    try{
+
+    }catch(err){
+        next(err)
+    }
 }
