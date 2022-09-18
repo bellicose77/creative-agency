@@ -19,6 +19,10 @@ export const register = async(req,res,next) =>{
 };
 export const login = async(req,res,next)=>{
     try{
+        const username = req.body.username;
+        const password = req.body.password;
+        const user = await User.find({username,password})
+        console.log(user)
 
     }catch(err){
         next(err)
