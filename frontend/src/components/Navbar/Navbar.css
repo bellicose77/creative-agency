@@ -5,6 +5,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.logoImg{
+    width: 96px;
+    height: 40px;
+    padding: 2px
+}
 .nItem{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
