@@ -20,8 +20,18 @@ export const register = async(req,res,next) =>{
 export const login = async(req,res,next)=>{
     try{
         const username = req.body.username;
+        const user = await User.findOne({username:username})
         const password = req.body.password;
-        const user = await User.find({username,password})
+        const isPasswordCorrect = await bcrypt.compare(
+            password,
+            user.password
+        )
+        if(isPasswordCorrect){
+            res.json("Login successful")
+        }
+        else{
+            res.json("Login unsuccessful")
+        }
         console.log(user)
 
     }catch(err){
