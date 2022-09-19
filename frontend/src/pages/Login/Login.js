@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 import logo from '../../images/logo.png'
 import './Login.css'
 
 const Login = () => {
+  const [credentials,setCredentials]=useState({
+    email:'',
+    password:''
+  });
     return (
         <div>
             <Navbar/>
