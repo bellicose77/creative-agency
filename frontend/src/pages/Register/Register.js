@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 import './Register.css'
 
 const Register = () => {
@@ -15,9 +16,15 @@ const Register = () => {
     }
     //console.log(data)
 
-    const handleRegister = (e)=>{
+    const handleRegister = async(e)=>{
         console.log(data)
         e.preventDefault();
+        try{
+            const res = await axios.post()
+
+        }catch(err){
+
+        }
 
     }
     return (
