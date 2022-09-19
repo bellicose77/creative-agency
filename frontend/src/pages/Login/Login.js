@@ -9,6 +9,12 @@ const Login = () => {
     email:'',
     password:''
   });
+  const handleLOnchange = e =>{
+    setCredentials((pre)=>({...pre,[e.target.name]:e.target.value}))
+  };
+  const handleLogin = e =>{
+    e.preventDefault();
+  }
     return (
         <div>
             <Navbar/>
