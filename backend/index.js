@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose  from 'mongoose';
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
+import cors from 'cors';
 import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
 
@@ -19,7 +20,8 @@ const connect = async() =>{
 };
 
 // all middel ware will be here
-app.use(express.json())
+app.use(express.json());
+app.use(cors());
 
 app.use('/api/users',userRoute);
 app.use('/api/auth',authRoute);
