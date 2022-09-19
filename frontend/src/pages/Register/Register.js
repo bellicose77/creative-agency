@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css'
 
 const Register = () => {
+    const [data,setData] = useState({
+        username:'',
+        email:'',
+        password:'',
+        isAdmin:false
+    })
 
     const handleRegister = (e)=>{
         e.preventDefault();
-        
+
     }
     return (
         <div>
