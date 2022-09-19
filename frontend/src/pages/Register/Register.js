@@ -11,7 +11,7 @@ const Register = () => {
     });
     const handleOnchange = (e) =>{
         const nameValue = e.target.name;
-        setData({...data,[nameValue]:e.target.value});
+        setData((pre)=>({...pre,[nameValue]:e.target.value}));
     }
     //console.log(data)
 
@@ -33,13 +33,13 @@ const Register = () => {
                         <input name='username' onChange={handleOnchange} type="text"/>
                         <br/>
                         <lable>Email: </lable>
-                        <input name='email' type="email"/>
+                        <input name='email' onChange={handleOnchange} type="email"/>
                         <br/>
                         <lable>Password: </lable>
-                        <input name='password' type="password"/>
+                        <input name='password' onChange={handleOnchange} type="password"/>
                         <br/>
                         <lable>Admin: </lable>
-                        <input name='isAdmin' type="Boolean"/>
+                        <input name='isAdmin' onChange={handleOnchange} type="Boolean"/>
                          
                     </form>
                     <button onClick={handleRegister}>Submit</button>
