@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
@@ -12,8 +13,14 @@ const Login = () => {
   const handleLOnchange = e =>{
     setCredentials((pre)=>({...pre,[e.target.name]:e.target.value}))
   };
-  const handleLogin = e =>{
+  const handleLogin = async (e) =>{
     e.preventDefault();
+    try{
+      const result = axios.post('http://localhost:8000/api/auth/login',credentials)
+
+    }catch(err){
+
+    }
   }
     return (
         <div>
