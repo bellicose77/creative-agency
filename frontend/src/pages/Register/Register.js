@@ -1,4 +1,5 @@
 import React from 'react';
+import './Register.css'
 
 const Register = () => {
     return (
@@ -12,10 +13,13 @@ const Register = () => {
                     <form>
                         <lable>Name: </lable>
                         <input type="text"/>
+                        <br/>
                         <lable>Email: </lable>
                         <input type="email"/>
+                        <br/>
                         <lable>Password: </lable>
                         <input type="password"/>
+                        <br/>
                         <lable>Admin: </lable>
                         <input type="Boolean"/>
                          
