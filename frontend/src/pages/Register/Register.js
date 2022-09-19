@@ -8,7 +8,8 @@ const Register = () => {
         email:'',
         password:'',
         isAdmin:false
-    })
+    });
+    const handleOnchange
 
     const handleRegister = (e)=>{
         e.preventDefault();
@@ -24,16 +25,16 @@ const Register = () => {
                 <div className='regForm'>
                     <form className='regFormInp'>
                         <lable>Name: </lable>
-                        <input type="text"/>
+                        <input name='username' onChange={handleOnchange} type="text"/>
                         <br/>
                         <lable>Email: </lable>
-                        <input type="email"/>
+                        <input name='email' type="email"/>
                         <br/>
                         <lable>Password: </lable>
-                        <input type="password"/>
+                        <input name='password' type="password"/>
                         <br/>
                         <lable>Admin: </lable>
-                        <input type="Boolean"/>
+                        <input name='isAdmin' type="Boolean"/>
                          
                     </form>
                     <button onClick={handleRegister}>Submit</button>
