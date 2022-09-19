@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 import logo from '../../images/logo.png'
 import './Login.css'
@@ -26,7 +27,7 @@ const Login = () => {
                       <button className='loginInputField' style={{background:"#111430"}}>Submit</button>
                    </div>
                    <div className='loginLink'>
-                    <p>Don't have an accont?<span className='loginSpan'>Create an account</span></p>
+                    <p>Don't have an accont?<Link to=""><span className='loginSpan'>Create an account</span></Link></p>
                    </div>
                    
                  </div>
