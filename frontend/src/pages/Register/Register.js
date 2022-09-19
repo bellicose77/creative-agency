@@ -9,9 +9,14 @@ const Register = () => {
         password:'',
         isAdmin:false
     });
-    const handleOnchange
+    const handleOnchange = (e) =>{
+        const nameValue = e.target.name;
+        setData({...data,[nameValue]:e.target.value});
+    }
+    //console.log(data)
 
     const handleRegister = (e)=>{
+        console.log(data)
         e.preventDefault();
 
     }
