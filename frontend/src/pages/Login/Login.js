@@ -24,7 +24,7 @@ const Login = () => {
                         <br/>
                        </div>
                     
-                      <button className='loginInputField' style={{background:"#111430"}}>Submit</button>
+                      <button className='loginInputField'>Submit</button>
                    </div>
                    <div className='loginLink'>
                     <p>Don't have an accont?<Link to="/register"><span className='loginSpan'>Create an account</span></Link></p>

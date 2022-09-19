@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Register.css'
 
 const Register = () => {
@@ -10,7 +11,7 @@ const Register = () => {
                  <h2>Register here</h2>
                 </div>
                 <div className='regForm'>
-                    <form>
+                    <form className='regFormInp'>
                         <lable>Name: </lable>
                         <input type="text"/>
                         <br/>
@@ -25,6 +26,7 @@ const Register = () => {
                          
                     </form>
                     <button>Submit</button>
+                    <p>Already have an account?<Link to='/login'><span>SignIn</span></Link></p>
                 </div>
 
             </div>
