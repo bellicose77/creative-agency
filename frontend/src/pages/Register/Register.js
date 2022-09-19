@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import './Register.css'
 
 const Register = () => {
+
+    const handleRegister = (e)=>{
+        e.preventDefault();
+        
+    }
     return (
         <div>
            <div className='regContainer'>
@@ -25,7 +30,7 @@ const Register = () => {
                         <input type="Boolean"/>
                          
                     </form>
-                    <button>Submit</button>
+                    <button onClick={handleRegister}>Submit</button>
                     <p>Already have an account?<Link to='/login'><span>SignIn</span></Link></p>
                 </div>
 
