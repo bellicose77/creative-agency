@@ -28,9 +28,9 @@ const Login = () => {
                    </div>
                    <div className='loginInput'>
                      <div className='loginInputFiel'>
-                       <input className='loginInputField' type="text" placeholder="email"/>
+                       <input name='email' onChange={handleLOnchange } className='loginInputField' type="email" placeholder="email"/>
                          <br/>
-                        <input className='loginInputField' type="password" placeholder="password"/>
+                        <input name='password' onChange={handleLOnchange } className='loginInputField' type="password" placeholder="password"/>
                         <br/>
                        </div>
                     
