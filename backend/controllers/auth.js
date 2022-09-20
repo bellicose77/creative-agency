@@ -29,8 +29,9 @@ export const login = async(req,res,next)=>{
             user.password
         )
         if(isPasswordCorrect){
-            const token = jwt.sign(username,process.env.JWT_SECRET)
-            res.json("Login successful")
+            const token = jwt.sign(username,process.env.JWT_SECRET);
+            res.json(token);
+            res.status(200).json("Login successful")
         }
         else{
             res.json("Login unsuccessful")
