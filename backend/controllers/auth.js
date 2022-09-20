@@ -1,5 +1,7 @@
 import User from "../models/User.js"
 import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken';
+import { json } from "express";
 
 export const register = async(req,res,next) =>{
     try{
@@ -27,7 +29,7 @@ export const login = async(req,res,next)=>{
             user.password
         )
         if(isPasswordCorrect){
-            const token = jwt.sign
+            const token = jwt.sign()
             res.json("Login successful")
         }
         else{
