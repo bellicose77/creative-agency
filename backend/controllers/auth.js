@@ -29,7 +29,7 @@ export const login = async(req,res,next)=>{
             user.password
         )
         if(isPasswordCorrect){
-            const token = jwt.sign()
+            const token = jwt.sign(username,process.env.JWT_SECRET)
             res.json("Login successful")
         }
         else{
