@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
+import serviceRoute from './routes/service.js'
 
 const app = express();
 dotenv.config();
@@ -25,6 +26,7 @@ app.use(cors());
 
 app.use('/api/users',userRoute);
 app.use('/api/auth',authRoute);
+app.use('/api/products',serviceRoute);
 
   
   app.listen(port, () => {
