@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import logo from '../../images/logo.png'
 import './Login.css'
@@ -50,6 +51,7 @@ const Login = () => {
                  </div>
 
         </div>
+        <Footer/>
     </div>
     );
 };
