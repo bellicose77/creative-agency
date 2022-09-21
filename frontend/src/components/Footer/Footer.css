@@ -3,3 +3,43 @@
     height: 837px;
     background: #FBD062;
 }
+.footerWrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr
+}
+.footerTextContainer{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+.tH{
+    width: 409px;
+    height: 82px;
+    /* border: 1px solid red; */
+    font-style: normal;
+    font-weight: 600;
+   font-size: 20px;
+    line-height: 19px;
+/* or 126% */
+
+letter-spacing: 0.396px;
+
+color: #2D2D2D;
+    
+}
+.pH{
+    width: 401px;
+    height: 71px;
+    font-style: normal;
+    /* border: 1px solid red; */
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+/* or 175% */
+
+letter-spacing: 0.396px;
+
+color: rgba(0, 0, 0, 0.7);
+}
