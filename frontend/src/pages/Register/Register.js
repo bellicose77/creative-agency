@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import './Register.css'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Register = () => {
     const [data,setData] = useState({
@@ -32,6 +33,7 @@ const Register = () => {
     }
     return (
         <div>
+            <Navbar/>
            <div className='regContainer'>
             <div className='regWrapper'>
                 <div className='regHeader'>
