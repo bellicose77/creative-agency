@@ -42,4 +42,41 @@ line-height: 24px;
 letter-spacing: 0.396px;
 
 color: rgba(0, 0, 0, 0.7);
+};
+.footerFormContainer{
+    display: grid;
+    grid-template-columns:auto;
+    justify-content: center;
+    align-items: center;
+}
+#xx{
+    width: 630px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 10px;
+}
+#xxx{
+    width: 630px;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 10px;
+}
+#xxxx{
+    width: 630px;
+    height: 277px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+};
+#bu{
+width: 170px;
+height: 45px;
+left: 721px;
+top: 3521px;
+color: #FFFFFF;
+background: #111430;
+border-radius: 5px;
 }

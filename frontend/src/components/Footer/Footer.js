@@ -12,16 +12,19 @@ const Footer = () => {
                    <div className='pH'>
                     <p>with well written colors,we build amazing apps for all<br/>
                     platform, mobiles and web app in generall
-        </p>
+                    </p>
                    </div>
                 </div>
                 <div className='footerFormContainer'>
-                   <form>
-                    <input type="text" placeholder="Your email"/><br/>
-                    <input type="text" placeholder="Your name/Your company"/><br/>
-                    <textarea/>
+                    <div className='ff'>
+                    <form>
+                    <input id='xx' type="text" placeholder="Your email"/><br/>
+                    <input id='xxx' type="text" placeholder="Your name/Your company"/><br/>
+                    <textarea id='xxxx'/>
                    </form>
-                   <button>Send</button>
+                   <button id='bu'>Send</button>
+                    </div>
+                  
                 </div>
 
             </div>
