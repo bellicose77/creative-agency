@@ -1,4 +1,4 @@
-import Service from "../models/Service"
+import Service from "../models/Service.js"
 
 export const addService = async(req,res,next)=>{
     try{
@@ -8,9 +8,9 @@ export const addService = async(req,res,next)=>{
             price:req.body.price
         });
         await newService.save();
-        res.status(200).json("Service created successfully")
+        res.status(200).json("Service created successfully");
 
     }catch(err){
-
+        console.log(err)
     }
 }
