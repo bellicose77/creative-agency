@@ -37,4 +37,15 @@ export const getSingleService = async(req,res,next)=>{
     catch(err){
         next(err)
     }
+};
+
+export const deleteService = async(req,res,next)=>{
+    const id = req.params.id;
+    try{
+
+        await Service.deleteOne(id)
+        res.status(200).json("deleted successfully")
+    }catch(err){
+        next(err)
+    }
 }
