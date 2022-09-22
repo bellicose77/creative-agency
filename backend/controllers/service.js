@@ -16,6 +16,7 @@ export const addService = async(req,res,next)=>{
 };
 export const getServices = async (req,res,next)=>{
     const service = await Service.find();
-    console.log(service)
+    console.log(service);
+    res.status(200).json(service)
 
 }
