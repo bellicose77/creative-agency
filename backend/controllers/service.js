@@ -50,4 +50,8 @@ export const deleteService = async(req,res,next)=>{
         console.log(err)
        // next(err)
     }
+};
+
+export const updateService = async(req,res,next)=>{
+    
 }
