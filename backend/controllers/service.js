@@ -25,4 +25,14 @@ export const getServices = async (req,res,next)=>{
     }
    
 
+};
+export const getSingleService = async(req,res,next)=>{
+    const id = req.params.id;
+    console.log(id);
+    try{
+
+    }
+    catch(err){
+        next(err)
+    }
 }
