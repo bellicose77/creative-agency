@@ -9,5 +9,7 @@ router.post('/services',addService);
 router.get('/services',getServices);
 //get a single service 
 router.get('/services/:id',getSingleService);
+// delete a service
+router.delete('/services/:id')
 
 export default router
