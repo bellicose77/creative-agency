@@ -53,5 +53,14 @@ export const deleteService = async(req,res,next)=>{
 };
 
 export const updateService = async(req,res,next)=>{
-    
+    try{
+        const id = req.params.id;
+        const updateValue = req.body;
+        const updateservice = await Service.updateOne({_id:id},{$set:updateValue});
+        res.status(200).json("updated successfully")
+
+    }catch(err){
+        next(err)
+    }
+
 }
