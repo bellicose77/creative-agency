@@ -7,5 +7,7 @@ const router = express.Router();
 router.post('/services',addService);
 //get all the service
 router.get('/services',getServices);
+//get a single service 
+router.get('/services/:id');
 
 export default router
