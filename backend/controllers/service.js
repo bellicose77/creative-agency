@@ -42,11 +42,12 @@ export const getSingleService = async(req,res,next)=>{
 export const deleteService = async(req,res,next)=>{
     const id = req.params.id;
     try{
-
-        await Service.deleteOne(id)
+         console.log("somethi")
+        await Service.deleteOne({_id:id})
         res.status(200).json("deleted successfully")
     }catch(err){
+        
         console.log(err)
-        next(err)
+       // next(err)
     }
 }
