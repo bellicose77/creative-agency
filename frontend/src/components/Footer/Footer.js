@@ -9,11 +9,10 @@ const Footer = () => {
                    <div className='tH'>
                     <h3>Let us handle your<br/>project,professionally</h3>
                    </div>
-                   <div className='pH'>
                     <p>with well written colors,we build amazing apps for all<br/>
                     platform, mobiles and web app in generall
                     </p>
-                   </div>
+                  
                 </div>
                 <div className='footerFormContainer'>
                     <div className='ff'>
