@@ -1,5 +1,5 @@
 import express from 'express'
-import { addService, getServices, getSingleService } from '../controllers/service.js';
+import { addService, deleteService, getServices, getSingleService } from '../controllers/service.js';
 
 const router = express.Router();
 
@@ -10,6 +10,6 @@ router.get('/services',getServices);
 //get a single service 
 router.get('/services/:id',getSingleService);
 // delete a service
-router.delete('/services/:id')
+router.delete('/services/:id',deleteService);
 
 export default router

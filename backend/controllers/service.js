@@ -46,6 +46,7 @@ export const deleteService = async(req,res,next)=>{
         await Service.deleteOne(id)
         res.status(200).json("deleted successfully")
     }catch(err){
+        console.log(err)
         next(err)
     }
 }
