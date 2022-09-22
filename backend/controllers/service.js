@@ -27,9 +27,11 @@ export const getServices = async (req,res,next)=>{
 
 };
 export const getSingleService = async(req,res,next)=>{
-    const id = req.params.id;
-    console.log(id);
+    // const id = req.params.id;
+    // console.log(id);
     try{
+        const serviceResult = await Service.findById(req.params.id);
+        res.status(200).json(serviceResult)
 
     }
     catch(err){
