@@ -19,6 +19,7 @@ const Login = () => {
     try{
       const result = await axios.post('http://localhost:8000/api/auth/login',credentials);
       console.log(result.data)
+      localStorage.setItem('accessToken',result.data.access_token)
 
     }catch(err){
 
