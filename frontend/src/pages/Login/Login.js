@@ -37,7 +37,7 @@ const Login = () => {
                    </div>
                    <div className='loginInput'>
                      <div className='loginInputFiel'>
-                       <input name='email' onChange={handleLOnchange } className='loginInputField' type="email" placeholder="email"/>
+                       <input name='username' onChange={handleLOnchange } className='loginInputField' type="text" placeholder="username"/>
                          <br/>
                         <input name='password' onChange={handleLOnchange } className='loginInputField' type="password" placeholder="password"/>
                         <br/>
