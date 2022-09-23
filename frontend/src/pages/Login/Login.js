@@ -8,7 +8,7 @@ import './Login.css'
 
 const Login = () => {
   const [credentials,setCredentials]=useState({
-    email:'',
+    username:'',
     password:''
   });
   const handleLOnchange = e =>{
@@ -17,7 +17,8 @@ const Login = () => {
   const handleLogin = async (e) =>{
     e.preventDefault();
     try{
-      const result = axios.post('http://localhost:8000/api/auth/login',credentials)
+      const result = await axios.post('http://localhost:8000/api/auth/login',credentials);
+      console.log(result.data)
 
     }catch(err){
 
