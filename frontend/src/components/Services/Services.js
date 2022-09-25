@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Service from '../Service/Service';
-import{ Row} from 'react-bootstrap';
+import{ Row,Col} from 'react-bootstrap';
+import './Services.css'
 
 const Services = () => {
   const[services,setServices] = useState([]);
@@ -16,12 +17,18 @@ const Services = () => {
   },[]);
   console.log(services)
     return (
-        <Row>
-        {
-          services.map(service =><Service service={service}/>)
+      <div className='serviceContainer'>
+        <h2 className='bHeader'>Provide awesome <span className='spText'>Services </span> </h2>
+          <Row>
+          
+          {
+          services.map(service =>(<Col><Service service={service}/></Col>))
           
          }
+       
       </Row>
+      </div>
+    
     );
 };
 

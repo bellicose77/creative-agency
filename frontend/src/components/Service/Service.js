@@ -5,16 +5,17 @@ const Service = (props) => {
    const{title,price,description}=props.service;
     return (
         <div>
-            <Col>
             <Card>
               <Card.Img variant="top" src="holder.js/100px160" />
               <Card.Body>
-                <Card.Title></Card.Title>
+                <Card.Title>{title}</Card.Title>
                 <Card.Text>
+                    {description}
+                    <p>{price}</p>
                 </Card.Text>
               </Card.Body>
+              <button>Buy</button>
             </Card>
-          </Col>
         </div>
     );
 };
