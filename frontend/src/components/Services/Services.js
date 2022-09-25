@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Service from '../Service/Service';
+import{ Row} from 'react-bootstrap';
 
 const Services = () => {
   const[services,setServices] = useState([]);
@@ -17,7 +18,7 @@ const Services = () => {
     return (
         <Row>
         {
-          services.map(service =><Service/>)
+          services.map(service =><Service service={service}/>)
           
          }
       </Row>
