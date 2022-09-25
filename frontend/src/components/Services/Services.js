@@ -1,8 +1,19 @@
-import React, { useState } from 'react';
-import{CardGroup,Card, Row, Col} from 'react-bootstrap'
+import React, { useEffect, useState } from 'react';
+import{CardGroup,Card, Row, Col} from 'react-bootstrap';
+import axios from 'axios';
 
 const Services = () => {
   const[services,setServices] = useState([]);
+  useEffect(()=>{
+    const fetchdata = async ()=>{
+      const result = await axios.get('http://localhost:8000/api/products/services');
+      setServices(result)
+    }
+    fetchdata()
+    
+    
+  },[]);
+  console.log(services)
     return (
         <Row xs={1} md={3} className="g-4">
         {Array.from({ length: 4 }).map((_, idx) => (
