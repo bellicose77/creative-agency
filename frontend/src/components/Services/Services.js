@@ -6,8 +6,8 @@ const Services = () => {
   const[services,setServices] = useState([]);
   useEffect(()=>{
     const fetchdata = async ()=>{
-      const result = await axios.get('http://localhost:8000/api/products/services');
-      setServices(result)
+      const {data} = await axios.get('http://localhost:8000/api/products/services');
+      setServices(data)
     }
     fetchdata()
     
@@ -15,8 +15,8 @@ const Services = () => {
   },[]);
   console.log(services)
     return (
-        <Row xs={1} md={3} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
+        <Row>
+        {
           <Col>
             <Card>
               <Card.Img variant="top" src="holder.js/100px160" />
@@ -30,7 +30,7 @@ const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-        ))}
+      }
       </Row>
     );
 };
