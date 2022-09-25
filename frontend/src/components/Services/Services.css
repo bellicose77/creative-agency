@@ -2,7 +2,7 @@
     margin: 20px;
 }
 .bHeader{
-    ont-weight: 600;
+    font-weight: 600;
 font-size: 34px;
 line-height: 43px;
 /* identical to box height, or 126% */
@@ -12,7 +12,7 @@ letter-spacing: 0.396px;
 
 color: #2D2D2D;
     
-};
+}
 .spText{
     color:#7AB259
 }
