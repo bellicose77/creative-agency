@@ -2,7 +2,10 @@ import React from 'react';
 import{CardGroup,Card, Row, Col} from 'react-bootstrap';
 
 const Service = (props) => {
-   const{title,price,description}=props.service;
+   const{_id,title,price,description}=props.service;
+   const handleShowDeatail = ()=>{
+    console.log(_id);
+   }
     return (
         <div>
             <Card>
