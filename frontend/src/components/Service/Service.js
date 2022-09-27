@@ -14,7 +14,7 @@ const Service = (props) => {
                     <p>{price}</p>
                 </Card.Text>
               </Card.Body>
-              <button>Buy</button>
+              <button onClick={handleShowDeatail}>Buy</button>
             </Card>
         </div>
     );
