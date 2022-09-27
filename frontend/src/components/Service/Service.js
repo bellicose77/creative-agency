@@ -1,10 +1,14 @@
 import React from 'react';
 import{CardGroup,Card, Row, Col} from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
+
 
 const Service = (props) => {
    const{_id,title,price,description}=props.service;
+   const navigate = useNavigate()
    const handleShowDeatail = ()=>{
     console.log(_id);
+    navigate(``)
    }
     return (
         <div>
