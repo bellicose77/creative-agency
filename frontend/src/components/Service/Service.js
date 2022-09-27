@@ -7,8 +7,8 @@ const Service = (props) => {
    const{_id,title,price,description}=props.service;
    const navigate = useNavigate()
    const handleShowDeatail = ()=>{
-    console.log(_id);
-    navigate(``)
+    //console.log(_id);
+    navigate(`/details/${_id}`)
    }
     return (
         <div>
